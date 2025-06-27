@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+
+body{
+background: linear-gradient(100deg, #984C1B 14.16%, #B3773E 100%);
+}
+
+.title{
+color: #512003;
+text-align: center;
+font-family: "Montserrat Alternates", sans-serif;
+font-style: normal;
+}
+
+.title.first{
+font-weight: 600;
+font-size: 50px;
+}
+
+.title.more{
+font-weight: 200;
+font-size: 30px;
+}
+
+.div{
+padding-top: 10px;
+width: 250px;
+height: 110px;
+background: #612903;
+border-radius: 24px;
+text-align: center;
+margin-top: 20px;
+font-family: "Oswald", sans-serif;
+font-weight: 400;
+font-size: 28px;
+font-style: normal;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.div:hover{
+    transform: scale(1.05);
+}
