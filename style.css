@@ -45,3 +45,44 @@ box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 .div:hover{
     transform: scale(1.05);
 }
+
+.title_next{
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 600;
+font-size: 70px;
+line-height: 104px;
+text-align: center;
+letter-spacing: 0.15em;
+color: #FFFFFF;
+}
+
+.cards {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.card {
+flex: 1 1 280px;
+max-width: 320px;
+height: 420px;
+border: 1px solid #000000;
+border-radius: 18px;
+box-sizing: border-box;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+}
+
+.object{
+text-align: center;
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 300;
+color: #FFFFFF;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
