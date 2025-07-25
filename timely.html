@@ -17,7 +17,7 @@
     <header>
         <div class="wrapper group">
             <h1 class="logo">Двері</h1>
-            <h2 class="title">Photo album</h2>
+            <h2 class="title">тимчасова кнопка <a href="index.html"><B>назад</B></a> </h2>
         </div>
     </header>
     
@@ -90,33 +90,8 @@
     <span class="close">&times;</span>
     <img class="modal-content" id="modal-img">
 </div>
-<script>
-    // Отримуємо модальне вікно
-    const modal = document.getElementById("modal");
-    const modalImg = document.getElementById("modal-img");
-    const closeBtn = document.querySelector(".close");
+<script src="gallery.js" >
 
-    // Всі картинки
-    const images = document.querySelectorAll(".image img");
-
-    images.forEach((img) => {
-        img.addEventListener("click", function () {
-            modal.style.display = "block";
-            modalImg.src = this.src.replace("_n.jpg", "_b.jpg"); // Можна адаптувати до розміру
-        });
-    });
-
-    // Закрити модалку
-    closeBtn.onclick = function () {
-        modal.style.display = "none";
-    };
-
-    // Закрити по кліку поза зображенням
-    modal.onclick = function (e) {
-        if (e.target === modal) {
-            modal.style.display = "none";
-        }
-    };
 </script>
 
 </body>
