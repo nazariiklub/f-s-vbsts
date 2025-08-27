@@ -5,59 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
-
-    <header>
+    <main>
+    <header>        
         <p class="title first" >Столярна Майстерня</p>
         <p class="title more">Вироби з дерева під замовлення</p>
         <div style="display: flex; flex-direction: row; justify-content: center; gap: 20px; " >
         <div class="div first" id="btn-scroll" >Переглянути роботи</div>
         <div class="div second" id="btn-scroll2" >Зв'язатися</div>
         </div>
-    </header>
 
-    <main>
+
         <p class="title_next" id="robyty" >Наші роботи</p>
         <div class="cards" >
-            <div class="card_div" >
-                <a href="timely.html">
-                <img class="card" src="img/door.png" alt="">
-                </a>
-                <h1 class="object" >Двері</h1>
-            </div>
-            <div>
-                <a href="timely.html">
-                <img class="card" src="img/floor.png" alt=""></a>
-                <h1 class="object" >Сходи</h1>
-            </div>
-            <div>
-                <a href="timely.html">
-                <img class="card" src="img/lavka.png" alt=""></a>
-                <h1 class="object" >Лави</h1>
-            </div>
-            <div>
-                <a href="timely.html">
-                <img class="card" src="img/table.png" alt=""></a>
-                <h1 class="object" >Столи</h1>
-            </div>
-            <div>
-                <a href="timely.html">
-                <img class="card" src="img/bad.png" alt=""></a>
-                <h1 class="object" >Ліжка</h1>
-            </div>
-            <div>
-                <a href="timely.html">
-                <img class="card" src="img/shafa.png" alt=""></a>
-                <h1 class="object" >Шафи\тумби</h1>
-            </div>
+<div class="card_div" data-target="doors-webp">
+    <img class="card" src="img/door.png" alt="">
+    <h1 class="object">Двері</h1>
+</div>
+
+<div class="card_div" data-target="stears-webp">
+    <img class="card" src="img/floor.png" alt="">
+    <h1 class="object">Сходи</h1>
+</div>
+
+<div class="card_div" data-target="benches-webp">
+    <img class="card" src="img/lavka.png" alt="">
+    <h1 class="object">Лави</h1>
+</div>
+
+<div class="card_div" data-target="tables-webp">
+    <img class="card" src="img/table.png" alt="">
+    <h1 class="object">Столи</h1>
+</div>
+
+<div class="card_div" data-target="Beds-webp">
+    <img class="card" src="img/bad.png" alt="">
+    <h1 class="object">Ліжка</h1>
+</div>
+
+<div class="card_div" data-target="wardrobe-webp">
+    <img class="card" src="img/shafa.png" alt="">
+    <h1 class="object">Шафи\тумби</h1>
+</div>
+
         </div>
               <p class="title_next" id="media">Зв'язок</p>
 
 <div class="contact-wrapper">
   <div class="phone-number glass">
     <p class="label">Номер телефону:</p>
-    <p class="value">1234567890</p>
+    <p class="value" id="copytext" >1234567890</p>
+    <button class="copy" onclick="copyPhone()">Скопіювати номер</button>
   </div>
 
   <div class="social-buttons">
@@ -69,15 +69,457 @@
     </div>
   </div>
 </div>
-
-
-
     </main>
+    <div class="doors-webp" > 
+            <div class="wrapper group">
+            <h1 class="logo">Двері</h1>
+            <h2 class="back"><B>🔙</B></a> </h2>
+        </div>  
+     <div class="wrapper group">
+        <section id="content">    
+            <ul class="grid half-width group">
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
 
+        <div class="footer-wrap">
+            <small> <a href="#"></a></small> 
+        </div>
+    <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+</div>
+    <div class="stears-webp" > 
+            <div class="wrapper group">
+            <h1 class="logo">Двері</h1>
+            <h2 class="back"><B>🔙</B></a> </h2>
+        </div>  
+     <div class="wrapper group">
+        <section id="content">    
+            <ul class="grid half-width group">
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+        <div class="footer-wrap">
+            <small> <a href="#"></a></small> 
+        </div>
+    <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+</div>
+    <div class="benches-webp" > 
+            <div class="wrapper group">
+            <h1 class="logo">Двері</h1>
+            <h2 class="back"><B>🔙</B></a> </h2>
+        </div>  
+     <div class="wrapper group">
+        <section id="content">    
+            <ul class="grid half-width group">
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+        <div class="footer-wrap">
+            <small> <a href="#"></a></small> 
+        </div>
+    <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+</div>
+    <div class="tables-webp" > 
+            <div class="wrapper group">
+            <h1 class="logo">Двері</h1>
+            <h2 class="back"><B>🔙</B></a> </h2>
+        </div>  
+     <div class="wrapper group">
+        <section id="content">    
+            <ul class="grid half-width group">
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+        <div class="footer-wrap">
+            <small> <a href="#"></a></small> 
+        </div>
+    <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+</div>
+    <div class="Beds-webp" > 
+            <div class="wrapper group">
+            <h1 class="logo">Двері</h1>
+            <h2 class="back"><B>🔙</B></a> </h2>
+        </div>  
+     <div class="wrapper group">
+        <section id="content">    
+            <ul class="grid half-width group">
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+        <div class="footer-wrap">
+            <small> <a href="#"></a></small> 
+        </div>
+    <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+</div>
+    <div class="wardrobe-webp" > 
+            <div class="wrapper group">
+            <h1 class="logo">Двері</h1>
+            <h2 class="back"><B>🔙</B></a> </h2>
+        </div>  
+     <div class="wrapper group">
+        <section id="content">    
+            <ul class="grid half-width group">
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="zoom-on-hover">
+                    <a href="#">
+                        <div class="image">
+                            <img src="img/door.png">
+                            <div class="caption">
+                                <h2>2016 рік
+                                    <p>300000000$</p>
+                                    <p>Дуб</p>
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+        <div class="footer-wrap">
+            <small> <a href="#"></a></small> 
+        </div>
+    <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+</div>
     <footer>
-
+        <p class="footer" >2025 all right reserved</p>
     </footer>
     <script src="script.js" ></script>
+    <script src="gallery.js" ></script>
+    <script>
+function copyPhone() {
+  const phone = document.getElementById("copytext").innerText;
+
+  navigator.clipboard.writeText(phone)
+    .then(() => {
+      alert("Номер скопійовано ✅"); 
+    })
+    .catch(err => {
+      console.error("Помилка копіювання: ", err);
+    });
+}
+</script>
 </body>
 </html>
 
